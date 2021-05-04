@@ -1,0 +1,33 @@
+[{
+	"mission": {
+		"name": "lover_greeting",
+		"payload": {
+			"title": "宝贝～ 起床啦～",
+			"begin_date": "2021-11-10",
+            "greeting_type": "morning"
+		}
+	},
+	"cron": "00 08 * * *",
+	"messenger": "enterprise_we_chat_app"
+}, {
+	"mission": {
+		"name": "lover_greeting",
+		"payload": {
+			"title": "宝贝～ 中午啦～",
+			"greeting_type": "normal"
+		}
+	},
+	"cron": "00 12 * * *",
+	"messenger": "enterprise_we_chat_app"
+},
+{
+	"mission": {
+		"name": "lover_greeting",
+		"payload": {
+			"title": "520 ！准时打卡！",
+			"greeting_type": "normal"
+		}
+	},
+	"cron": "20 17 * * *",
+	"messenger": "enterprise_we_chat_app"
+}]
