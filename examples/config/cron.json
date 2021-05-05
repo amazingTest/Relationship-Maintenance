@@ -25,7 +25,7 @@
 		"name": "lover_greeting",
 		"payload": {
 			"title": "520 ！准时打卡！",
-			"greeting_type": "normal"
+			"content": "准时不！"
 		}
 	},
 	"cron": "20 17 * * *",
