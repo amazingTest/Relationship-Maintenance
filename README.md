@@ -19,7 +19,17 @@
 
 ## 功能介绍
 
-+ 自定义微信消息推送
++ 微信消息推送
+
+    + cron 定时推送
+
+    + 多任务并行推送
+
+    + 自定义标题 & 内容
+
+    + 随机内容配置
+
+    + 支持 docker 镜像部署
 
 ## 使用
 
@@ -115,7 +125,7 @@
 
         宝贝～ 中午啦～
     
-        my baby，虽然情人节时咱们不能在一起过，但是我要你知道，我的心从来没有走远...爱你!
+        my baby，...爱你!
     
     
 3. 下午 5 点 20 推送一条消息:
@@ -131,6 +141,7 @@ payload 中的 begin_date(opt) 代表的是开始在一起的时间，用于计�
 payload 中 title(opt) 表示推送的标题;
 
 payload 中 greeting_type(opt) 表示 lover_greeting 推送的类型（会随机在 config/builtin_sentences.json 中选择一条作为 content);
+
 （若在 payload 设置 content(opt) 值则会覆盖 greeting_type 参数产生的效果）
 
 
