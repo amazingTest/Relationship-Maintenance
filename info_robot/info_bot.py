@@ -55,7 +55,7 @@ class LoverGreetingBot(InternalInfoBot):
             return
         begin_datetime = datetime.strptime(self.begin_date, '%Y-%m-%d')
         now_datetime = datetime.now()
-        together_days = (now_datetime - begin_datetime).days
+        together_days = (now_datetime - begin_datetime).days + 1
         return together_days
 
 
